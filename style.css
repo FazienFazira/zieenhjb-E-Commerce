@@ -1,0 +1,225 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #fafafa;
+  color: #333;
+}
+
+header {
+  background-color: #fcfbfb;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #eaa1cd;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: oklch(84.535% 0.03758 17.781);
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 450px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  color: #000;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #4b2e05;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #332103;
+}
+
+.collections {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.produk-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.produk-card {
+  background: rgb(252, 249, 249);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 220px;
+}
+
+.produk-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.produk-card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+  margin-top: 30px;
+}
+
+/* Halaman detail */
+.detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.detail img {
+  border-radius: 10px;
+  width: 300px;
+}
+
+.detail-info {
+  max-width: 400px;
+}
+
+/* Halaman pembayaran */
+.form-section {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Halaman Tentang kami */
+/* ===== Tema Pink Soft ===== */
+body.pink-theme {
+  background-color: #ae979f;
+  color: #4a4a4a;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: #fbfbfb;
+  box-shadow: 0 2px 5px rgba(255, 182, 193, 0.3);
+}
+
+.logo {
+  color: #e27396;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #e27396;
+}
+
+.about {
+  max-width: 800px;
+  margin: 70px auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(226, 115, 150, 0.1);
+}
+
+.about h2 {
+  color: #e27396;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.misi h3 {
+  color: #e27396;
+  margin-top: 30px;
+}
+
+.misi ul {
+  list-style: none;
+  padding: 0;
+}
+
+.misi ul li {
+  background-color: #ffe3ec;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffe3ec;
+  color: #6b6b6b;
+  margin-top: 50px;
+  font-size: 14px;
+}
+

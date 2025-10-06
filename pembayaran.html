@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembayaran - zieenhjb</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">zieenhjb.</div>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="detail.html">Produk Kami</a>
+      <a href="pembayaran.html">Pembayaran</a>
+    </nav>
+  </header>
+
+  <section class="form-section">
+    <h2>Form Pembayaran</h2>
+    <form onsubmit="kirimWA(event)">
+      <label>Nama Lengkap:</label>
+      <input type="text" id="nama" required>
+
+      <label>Alamat Pengiriman:</label>
+      <textarea id="alamat" required></textarea>
+
+      <label>Metode Pembayaran:</label>
+      <select id="metode" required>
+        <option>Transfer Bank</option>
+        <option>COD (Bayar di Tempat)</option>
+        <option>E-Wallet (DANA, OVO, GoPay)</option>
+      </select>
+
+      <button type="submit" class="btn">Kirim ke WhatsApp</button>
+    </form>
+  </section>
+
+  <script>
+    function kirimWA(event) {
+      event.preventDefault();
+      let nama = document.getElementById("nama").value;
+      let alamat = document.getElementById("alamat").value;
+      let metode = document.getElementById("metode").value;
+
+      let pesan = `Halo Ziennhjb! Saya ingin memesan buku.%0A%0A📖 *Nama:* ${nama}%0A🏠 *Alamat:* ${alamat}%0A💳 *Metode Pembayaran:* ${metode}`;
+      window.open(`https://wa.me/6289528656272?text=${pesan}`, "_blank");
+    }
+  </script>
+
+  <footer>
+    <p>© 2025 zieenhjb Hijabstore.</p>
+  </footer>
+
+</html>
